@@ -4,7 +4,7 @@ class TarjansAlgorithm {
     static class Graph {
         private int V;
         private List<List<Integer>> adj;
-        private int id, sccCount;
+        private int id;
         private int[] ids, low;
         private boolean[] onStack;
         private Stack<Integer> stack;
@@ -23,7 +23,6 @@ class TarjansAlgorithm {
 
         List<List<Integer>> tarjansSCC() {
             id = 0;
-            sccCount = 0;
             ids = new int[V];
             low = new int[V];
             onStack = new boolean[V];
